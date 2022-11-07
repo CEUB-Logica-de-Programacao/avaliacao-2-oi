@@ -22,8 +22,17 @@
 # ```
 
 def q3(prices):
-    # Escreva seu código aqui
-    pass
+    menor = 999999
+    self = 0
+    for i, x in enumerate(prices):
+        if x <= menor:
+            menor = x
+            indice_menor = i
+    for i, x in enumerate(prices):
+        if i > indice_menor:
+            if (x - menor) > self:
+                self = x - menor
+    return self
 
 
 if __name__ == '__main__':
