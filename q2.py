@@ -38,8 +38,7 @@ def q2(n):
         n1 += 1
         n2 += 1
     R.sort(reverse=True)
-    print(R[0])
-    pass
+    return R[0]
 
 
 if __name__ == '__main__':
