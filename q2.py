@@ -24,8 +24,10 @@
 # ```
 
 
-def q2(numeral):
+def num(n):
+    
     R = [1, 2, 3]
+    
     if n == 1:
         return R[0]
     if n == 2:
@@ -43,7 +45,7 @@ def q2(numeral):
         n1 += 1
         n2 += 1
     R.sort(reverse=True)
-    return R[0]
+    return (R[0])
     
 
 
