@@ -25,7 +25,20 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
+    R = [1, 2, 3]
+    n = int(input('Quantos degraus? '))
+    n -= 3
+    x = 1
+    n1=1
+    n2=2
+    while x <= n:
+        Rn = R[n1] + R[n2]
+        R.append(Rn)
+        x += 1
+        n1 += 1
+        n2 += 1
+    R.sort(reverse=True)
+    print(R[0])
     pass
 
 
