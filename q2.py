@@ -26,7 +26,6 @@
 
 def q2(numeral):
     R = [1, 2, 3]
-
     if n == 1:
         return R[0]
     if n == 2:
