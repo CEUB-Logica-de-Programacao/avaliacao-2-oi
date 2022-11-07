@@ -24,7 +24,7 @@
 # ```
 
 
-def q4(numeral):
+def q2(numeral):
 
     
 
