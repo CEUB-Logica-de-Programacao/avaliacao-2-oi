@@ -26,7 +26,6 @@
 
 def q2(n):
     R = [1, 2, 3]
-    n = int(input('Quantos degraus? '))
     n -= 3
     x = 1
     n1=1
