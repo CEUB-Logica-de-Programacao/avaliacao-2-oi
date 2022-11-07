@@ -24,26 +24,29 @@
 # ```
 
 
-def q2(n):
-    R = [1, 2, 3]
-    if n == 1:
-        return R[0]
-    if n == 2:
-        return R[1]
-    if n == 3:
-        return R[2]
-    n -= 3
-    x = 1
-    n1=1
-    n2=2
-    while x <= n:
-        Rn = R[n1] + R[n2]
-        R.append(Rn)
-        x += 1
-        n1 += 1
-        n2 += 1
-    R.sort(reverse=True)
-    return R[0]
+def q4(numeral):
+
+    mapa = {
+       "I": 1, 
+       "V": 5, 
+       "X": 10, 
+       "L": 50, 
+       "C": 100, 
+       "D": 500, 
+       "M": 1000
+       }
+    valor = 0
+    ult_digito = 0
+    
+    for digito_rom in numeral[::-1]:             
+       valor_digito = mapa[digito_rom]
+       if valor_digito >= ult_digito:
+           valor += valor_digito
+           ult_digito = valor_digito
+       else:
+           valor -= valor_digito
+    return valor
+
 
 
 if __name__ == '__main__':
