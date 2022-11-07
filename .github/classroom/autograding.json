@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Questao 1",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_q1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Questao 2",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_q2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Questao 3",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_q3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Questao 4",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_q4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Questao 5",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_q5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Questao Bonus",
+      "setup": "",
+      "run": "python -m unittest test.BaseTestCase.test_bonus",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
