@@ -23,8 +23,7 @@
 # 3. 2 degraus + 1 degrau
 # ```
 
-
-def num(n):
+def q2(n):
     
     R = [1, 2, 3]
     
