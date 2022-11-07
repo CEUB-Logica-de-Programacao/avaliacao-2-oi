@@ -27,6 +27,26 @@
 
 
 def q4(numeral):
+
+    mapa = {
+       "I": 1, 
+       "V": 5, 
+       "X": 10, 
+       "L": 50, 
+       "C": 100, 
+       "D": 500, 
+       "M": 1000
+       }
+    valor = 0
+    ult_digito = 0
+    
+    for digito_rom in numeral[::-1]:             
+       valor_digito = mapa[digito_rom]
+       if valor_digito >= ult_digito:
+           valor += valor_digito
+           ult_digito = valor_digito
+       else:
+           valor -= valor_digito
+    return valor
 if __name__ == '__main__':
     print(q4('MCMXCIV'))  # 1994
-    
