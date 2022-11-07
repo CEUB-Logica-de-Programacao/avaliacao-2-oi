@@ -20,8 +20,18 @@
 # ```
 
 def q1(names, heights):
-    # Escreva seu código aqui
-    pass
+    listaOrdenada = []
+    for i , x in enumerate(names):
+        listaTemp = []
+        listaTemp.append(heights[i])
+        listaTemp.append(names[i])
+        listaOrdenada.append(listaTemp)
+    listaOrdenada.sort(reverse=True)
+    print(listaOrdenada)
+    MaiorNomes = []
+    for i, x in enumerate(listaOrdenada):
+        MaiorNomes.append(listaOrdenada[i][1])
+    return MaiorNomes
 
 
 if __name__ == '__main__':
